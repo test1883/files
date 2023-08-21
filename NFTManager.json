@@ -1,6 +1,12 @@
 [
     {
-      "inputs": [],
+      "inputs": [
+        {
+          "internalType": "address payable",
+          "name": "marketOwner",
+          "type": "address"
+        }
+      ],
       "stateMutability": "payable",
       "type": "constructor"
     },
