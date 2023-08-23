@@ -1,12 +1,6 @@
-[
+ [
     {
-      "inputs": [
-        {
-          "internalType": "address payable",
-          "name": "marketOwner",
-          "type": "address"
-        }
-      ],
+      "inputs": [],
       "stateMutability": "payable",
       "type": "constructor"
     },
@@ -103,6 +97,18 @@
           "internalType": "string",
           "name": "store",
           "type": "string"
+        },
+        {
+          "indexed": false,
+          "internalType": "string",
+          "name": "invoice",
+          "type": "string"
+        },
+        {
+          "indexed": false,
+          "internalType": "uint256",
+          "name": "totalAmount",
+          "type": "uint256"
         }
       ],
       "name": "NFTSold",
@@ -147,6 +153,11 @@
           "internalType": "uint256",
           "name": "_amount",
           "type": "uint256"
+        },
+        {
+          "internalType": "string",
+          "name": "invoice",
+          "type": "string"
         }
       ],
       "name": "approveTransaction",
@@ -217,7 +228,7 @@
     },
     {
       "inputs": [],
-      "name": "getMyActiveTransactions",
+      "name": "getMyTransactions",
       "outputs": [
         {
           "components": [
@@ -255,6 +266,21 @@
               "internalType": "string",
               "name": "store",
               "type": "string"
+            },
+            {
+              "internalType": "string",
+              "name": "invoice",
+              "type": "string"
+            },
+            {
+              "internalType": "bool",
+              "name": "done",
+              "type": "bool"
+            },
+            {
+              "internalType": "uint256",
+              "name": "totalAmount",
+              "type": "uint256"
             }
           ],
           "internalType": "struct NFTManager.NFT[]",
@@ -273,7 +299,7 @@
           "type": "address"
         }
       ],
-      "name": "getStoreActiveTransactions",
+      "name": "getStoreTransactions",
       "outputs": [
         {
           "components": [
@@ -311,6 +337,21 @@
               "internalType": "string",
               "name": "store",
               "type": "string"
+            },
+            {
+              "internalType": "string",
+              "name": "invoice",
+              "type": "string"
+            },
+            {
+              "internalType": "bool",
+              "name": "done",
+              "type": "bool"
+            },
+            {
+              "internalType": "uint256",
+              "name": "totalAmount",
+              "type": "uint256"
             }
           ],
           "internalType": "struct NFTManager.NFT[]",
